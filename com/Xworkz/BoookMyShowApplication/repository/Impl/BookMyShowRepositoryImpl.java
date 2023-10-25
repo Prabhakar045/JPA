@@ -13,7 +13,7 @@ public class BookMyShowRepositoryImpl implements BookMyShowRepository {
     public boolean addMovieTicket(MovieTicketsDTO dto) {
         System.out.println("addMovie method invoked");
         Persistence persistence = new Persistence();
-        EntityManagerFactory entityManagerFactory =persistence.createEntityManagerFactory("com.pbkk");
+        EntityManagerFactory entityManagerFactory =persistence.createEntityManagerFactory("com.pbk");
         EntityManager entityManager = entityManagerFactory.createEntityManager();
 
         entityManager.getTransaction().begin();
@@ -26,6 +26,6 @@ public class BookMyShowRepositoryImpl implements BookMyShowRepository {
     public MovieTicketsDTO getBookingInfoByID(int id) {
         System.out.println("get method invoked ");
 
-        return new Persistence().createEntityManagerFactory("com.pbkk").createEntityManager().find(MovieTicketsDTO.class, 2);
+        return new Persistence().createEntityManagerFactory("com.pbkk").createEntityManager().find(MovieTicketsDTO.class, id);
     }
 }

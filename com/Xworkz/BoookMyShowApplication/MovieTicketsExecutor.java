@@ -1,6 +1,5 @@
 package com.Xworkz.BoookMyShowApplication;
 
-import com.Xworkz.BoookMyShowApplication.Constant.Language;
 import com.Xworkz.BoookMyShowApplication.dto.MovieTicketsDTO;
 import com.Xworkz.BoookMyShowApplication.services.BookMyShowService;
 import com.Xworkz.BoookMyShowApplication.services.Impl.BookMyShowServiceImpl;
@@ -40,7 +39,7 @@ public class MovieTicketsExecutor {
 
             MovieTicketsDTO movieTicketsDTO = new MovieTicketsDTO();
             movieTicketsDTO.setMovieName(movieName);
-            movieTicketsDTO.setLanguage(Language.valueOf(language));
+            movieTicketsDTO.setLanguage(language);
             movieTicketsDTO.setTheaterName(theaterName);
             movieTicketsDTO.setNoOfTickets(noOfTickets);
             movieTicketsDTO.setPrice(price);

@@ -1,6 +1,5 @@
 package com.Xworkz.BoookMyShowApplication.dto;
 
-import com.Xworkz.BoookMyShowApplication.Constant.Language;
 import lombok.Data;
 import org.hibernate.annotations.GenericGenerator;
 
@@ -21,7 +20,7 @@ public class MovieTicketsDTO {
     private String  movieName;
 
     @Column(name = "language")
-    private Language language;
+    private String language;
 
     @Column(name="theater_name")
     private String theaterName;
